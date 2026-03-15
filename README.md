@@ -24,7 +24,9 @@ Through structured projects, architectural experiments, and production-inspired 
 The goal is to cultivate the skills required to design and build **robust, scalable, and secure computing platforms** for modern enterprise and high-performance environments.
 
 > [!IMPORTANT]
-> **New Students:** Please start by reading the [Welcome & Onboarding]([https://github.com/saisravan909/Systems-Infrastructure-Lab/issues/1].
+> **New Students:** Please start by reading the [Welcome & Onboarding](https://github.com/saisravan909/Systems-Infrastructure-Lab/issues/1).
+
+---
 ---
 
 ## Laboratory Overview
