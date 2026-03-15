@@ -1,3 +1,16 @@
+# Engineering Path Selection
+
+Select a specialization that aligns with your technical objectives. Each path requires mastery of specific toolchains and architectural patterns.
+
+| Path | Focus | Primary Tech | Complexity |
+| :--- | :--- | :--- | :--- |
+| **Security & Stealth** | Packet Inspection | C++ | High |
+| **Architect & Scalability** | Distributed Systems | Java | Medium |
+| **Full-System Builder** | JNI & Telemetry | C++ / Java | High |
+| **Trust & Cryptography** | Immutable Ledgers | Java | Medium |
+| **Speed & Logic** | Quantitative Backtesting | C++ | Extreme |
+
+
 # Project Selection & Roadmaps
 
 This laboratory offers these distinct engineering paths. Each path is designed to challenge your architectural thinking and technical precision. Review the personas below to identify which specialization aligns with your current objectives.
@@ -48,11 +61,30 @@ This laboratory offers these distinct engineering paths. Each path is designed t
 * **The Objective:** Produce "production-grade" code optimized for extreme speed, a critical requirement for quantitative finance and data science.
 
 ---
-
 ## Execution Framework: The First 60 Minutes
 
-1.  **Identify Your Persona:** Select the path that corresponds most closely with your career interests.
-2.  **Analyze the Core Features:** Navigate to the specific project directory and review the detailed requirements in the local README.
-3.  **Conduct Technical Research:** Dedicate 30 minutes to researching the required stack (e.g., libpcap for C++ or Socket Channels for Java).
-4.  **Initialize Development:** Follow the branching protocol in the Contribution Guide to create your workspace:
-    `git checkout -b student-[your-name]-[project-name]`
+The transition from observer to contributor happens in the first hour. Follow this high-velocity onboarding sequence to initialize your environment.
+
+### 00-15 min: Strategic Alignment
+* **Identify Your Persona:** Select the path from the table above that aligns with your technical objectives.
+* **Log Intent:** Open a new **Issue** in the GitHub tracker titled `Project Initialization: [Project Name]`. Apply the `Status: Discovery` and `Priority: Standard` labels.
+
+### 15-45 min: Deep Technical Audit
+* **Requirement Analysis:** Navigate to the project directory (e.g., `/01-netscout-sniffer`) and perform a line-by-line audit of the local `README.md`.
+* **Stack Research:** Dedicate 30 minutes to researching the core dependencies.
+    * *Security Path:* Focus on `libpcap` and raw socket structures in C++.
+    * *Architect Path:* Focus on `java.nio.channels` and Selector patterns.
+
+### 45-60 min: Infrastructure Initialization
+* **Branching Protocol:** Create your isolated workspace using the professional naming convention:
+    ```bash
+    git checkout -b student/[your-name]/[project-path]
+    ```
+* **Environment Validation:** Compile the "Hello World" or boilerplate provided in the directory to ensure your toolchain (GCC/OpenJDK) is configured correctly.
+* **Sync:** Push your empty branch to the origin to confirm connectivity:
+    ```bash
+    git push origin student/[your-name]/[project-path]
+    ```
+---
+> [!TIP]
+> **Stuck?** Do not struggle in silence. Post a technical blocker in the comments of your Initialization Issue and tag the @mentor for architectural guidance.
