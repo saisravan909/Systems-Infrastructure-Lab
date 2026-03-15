@@ -22,3 +22,15 @@ git config user.email "your.email@example.com"
 ```
 > [!TIP]
 > Use the same email address associated with your GitHub account to ensure your contributions are correctly linked to your profile.
+---
+
+## Phase 2: Branching & Atomic Commits
+
+In a professional environment, we never commit directly to the `main` branch. We use isolated "Feature Branches" to develop and test new logic.
+
+### 1. Create Your Feature Branch
+Before writing any code, create a new branch using the standard naming convention:
+
+```bash
+# Syntax: student/[name]/[project-slug]
+git checkout -b student/s-sravan/01-netscout
