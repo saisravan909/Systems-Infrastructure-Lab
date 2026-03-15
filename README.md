@@ -23,6 +23,8 @@ Through structured projects, architectural experiments, and production-inspired 
 
 The goal is to cultivate the skills required to design and build **robust, scalable, and secure computing platforms** for modern enterprise and high-performance environments.
 
+> [!IMPORTANT]
+> **New Students:** Please start by reading the [Welcome & Onboarding Issue](link-to-your-pinned-issue).
 ---
 
 ## Laboratory Overview
