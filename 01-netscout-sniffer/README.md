@@ -111,7 +111,6 @@ You will create a **fully functional network packet sniffer** that can:
 **Value to you:** Completing this project demonstrates the ability to work at the **lowest levels of networking**, a skill highly sought after in network engineering, cybersecurity, and systems development roles.
 
 ---
-
 ## Step-by-Step Roadmap
 
 ```mermaid
@@ -126,8 +125,7 @@ Step7[Add real-time filtering]
 Step8[Test with live network traffic]
 
 Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7 --> Step8
-
----
+```
 
 # NetScout Sniffer Project – Complete Student Guide with Flowcharts
 
