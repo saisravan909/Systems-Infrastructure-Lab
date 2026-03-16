@@ -1,0 +1,38 @@
+# 01 – NetScout Sniffer
+
+Low-Level Network Analysis and Packet Inspection
+
+---
+
+## System Architecture
+
+```mermaid
+flowchart LR
+
+Traffic["Network Traffic"]
+NIC["Network Interface"]
+Capture["Packet Capture (libpcap)"]
+Parse["Protocol Parsing"]
+Buffer["Packet Buffer"]
+Analyze["Traffic Analysis"]
+Log["Logging"]
+
+Traffic --> NIC
+NIC --> Capture
+Capture --> Parse
+Parse --> Buffer
+Buffer --> Analyze
+Analyze --> Log
+```
+---
+
+## Project Navigation
+
+| Section | Description |
+|--------|-------------|
+| [Lab Guide](LAB_GUIDE.md) | Step-by-step implementation instructions |
+| [Architecture Deep Dive](ARCHITECTURE.md) | Detailed system design and diagrams |
+| [Student Cheat Sheet](CHEATSHEET.md) | Quick reference while coding |
+| [Source Code](src/) | Implementation files |
+
+---
