@@ -375,4 +375,56 @@ ServerA --> DistributedDB
 ServerB --> DistributedDB
 ServerC --> DistributedDB
 ```
+## Key-Value Data Model
+
+```mermaid
+flowchart TD
+
+Key1["Key: user123"]
+Value1["Value: {name: Alice, role: admin}"]
+
+Key2["Key: session847"]
+Value2["Value: {login: 12:01PM, status: active}"]
+
+Key3["Key: order552"]
+Value3["Value: {item: laptop, status: shipped}"]
+
+Key1 --> Value1
+Key2 --> Value2
+Key3 --> Value3
+```
+## Data Partitioning Across Nodes
+
+```mermaid
+flowchart LR
+
+KeyA["Key: user1"]
+KeyB["Key: user2"]
+KeyC["Key: user3"]
+
+Node1[Node A]
+Node2[Node B]
+Node3[Node C]
+
+KeyA --> Node1
+KeyB --> Node2
+KeyC --> Node3
+```
+## Node Replication Process
+
+```mermaid
+sequenceDiagram
+
+participant NodeA
+participant NodeB
+participant NodeC
+
+NodeA->>NodeB: Replicate PUT(key,value)
+NodeB-->>NodeA: ACK
+
+NodeA->>NodeC: Replicate PUT(key,value)
+NodeC-->>NodeA: ACK
+```
+
+
 
