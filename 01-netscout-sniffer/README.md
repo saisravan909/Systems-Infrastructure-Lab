@@ -36,3 +36,11 @@ Analyze --> Log
 | [Source Code](src/) | Implementation files |
 
 ---
+## Learning Path
+
+Follow the project in this order:
+
+1️⃣ Read the **README** for the project overview  
+2️⃣ Follow the **Lab Guide** to implement the sniffer  
+3️⃣ Use the **Cheat Sheet** while coding  
+4️⃣ Review the **Architecture** to understand the system design
