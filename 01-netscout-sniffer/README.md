@@ -29,9 +29,9 @@ NetScout is a high-performance network analysis tool designed to interface direc
 
 ## Technical Requirements
 
-* **Packet Capture Engine:** Implement a capture loop using the `libpcap` library to interface with network hardware.
-* **Protocol Deconstruction:** Manually parse Ethernet, IP, and TCP/UDP headers using bit-masking and C++ structures.
-* **Memory Constraints:** Efficient buffer management to handle high-traffic throughput without packet loss or memory exhaustion.
+* <span style="color:#ff6f61;">Packet Capture Engine</span>: Implement a capture loop using the `libpcap` library to interface with network hardware.
+* <span style="color:#6f4fff;">Protocol Deconstruction</span>: Manually parse Ethernet, IP, and TCP/UDP headers using bit-masking and C++ structures.
+* <span style="color:#f4d03f;">Memory Constraints</span>: Efficient buffer management to handle high-traffic throughput without packet loss or memory exhaustion.
 
 ---
 
@@ -65,9 +65,9 @@ Imagine being a **postal inspector**:
 
 In networking terms:
 
-* **Ethernet header** → sender/receiver info  
-* **IP header** → routing details  
-* **TCP/UDP header** → port and connection info  
+* <span style="color:#ff6f61;">Ethernet header</span> → sender/receiver info  
+* <span style="color:#6f4fff;">IP header</span> → routing details  
+* <span style="color:#f4d03f;">TCP/UDP header</span> → port and connection info  
 
 ---
 
@@ -91,7 +91,7 @@ This project mirrors **tools used by companies like Wireshark, NetScout, and Sol
 
 ## What You Are Building
 
-In this project you will create a **network packet sniffer** that can:
+Your network packet sniffer will:
 
 1. Capture live packets from the network interface.
 2. Parse and display Ethernet, IP, and TCP/UDP headers.
@@ -106,7 +106,6 @@ Think of it as your own **mini Wireshark**, focusing on understanding the **inne
 
 ```mermaid
 flowchart LR
-
 Step1[Setup libpcap environment]
 Step2[Capture network packets]
 Step3[Parse Ethernet headers]
