@@ -505,10 +505,6 @@ Students love seeing industry relevance. Large systems use similar architectures
 
 ## 3️⃣ Visual Diagram of System Architecture
 
-Below is a visual representation of how the components interact. This helps students quickly understand the data flow and responsibilities:
-
-![System Architecture Diagram](./a_diagram_illustrates_the_distributed_key_value_st.png)
-
 - <span style="color:#ff6f61;">**Network Listener:**</span> Handles incoming client requests.  
 - <span style="color:#6f4fff;">**Parser:**</span> Processes PUT/GET commands.  
 - <span style="color:#f4d03f;">**Storage:**</span> Stores data using HashMap/ConcurrentHashMap.  
