@@ -425,6 +425,52 @@ NodeB-->>NodeA: ACK
 NodeA->>NodeC: Replicate PUT(key,value)
 NodeC-->>NodeA: ACK
 ```
+## Client Command Flow
+
+```mermaid
+flowchart LR
+
+Client -->|PUT user1 Alice| Node
+Node --> Storage
+
+Client -->|GET user1| Node
+Node --> Storage
+Storage --> Node
+Node --> Client
+```
+## Server Node Internal Components
+
+```mermaid
+flowchart TD
+
+Network[Network Listener]
+Parser[Command Parser]
+Storage[Key Value Map]
+Threading[Concurrency Control]
+Replication[Cluster Replication]
+
+Network --> Parser
+Parser --> Storage
+Storage --> Threading
+Storage --> Replication
+```
+## Project Implementation Roadmap
+
+```mermaid
+flowchart LR
+
+Step1[Start Java Server]
+Step2[Accept TCP Connections]
+Step3[Parse Commands]
+Step4[Implement Key Value Storage]
+Step5[Handle Concurrent Clients]
+Step6[Add Node Communication]
+Step7[Implement Replication]
+Step8[Optimize Performance]
+
+Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7 --> Step8
+```
+
 
 
 
