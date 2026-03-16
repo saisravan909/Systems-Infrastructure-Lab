@@ -255,3 +255,62 @@ Node->>Storage: Lookup key
 Storage-->>Node: Return value
 Node-->>Client: value
 ```
+## Node Replication Model
+
+```mermaid
+flowchart LR
+
+A[Node A]
+B[Node B]
+C[Node C]
+
+A -->|Replicate Data| B
+B -->|Replicate Data| C
+C -->|Replicate Data| A
+
+A -->|Heartbeat| B
+B -->|Heartbeat| C
+C -->|Heartbeat| A
+```
+## Node Internal Architecture
+
+```mermaid
+flowchart TD
+
+Listener[Network Listener : Java NIO]
+
+Parser[Request Parser]
+
+Store[Key-Value Storage]
+
+Concurrency[Concurrency Control]
+
+Replication[Replication Engine]
+
+Listener --> Parser
+Parser --> Store
+Store --> Concurrency
+Store --> Replication
+Replication --> Listener
+```
+## Project Development Roadmap
+
+```mermaid
+flowchart LR
+
+Step1[Start Server Node]
+
+Step2[Accept Client Connections]
+
+Step3[Implement PUT GET DELETE]
+
+Step4[Add Thread Safety]
+
+Step5[Add Node Discovery]
+
+Step6[Implement Replication]
+
+Step7[Optimize Performance]
+
+Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7
+```
