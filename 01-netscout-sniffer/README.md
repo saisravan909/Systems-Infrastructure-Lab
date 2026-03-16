@@ -31,7 +31,8 @@ Analyze --> Log
 | Section | Description |
 |--------|-------------|
 | [LAB_ARCHITECTURE GUIDE](https://github.com/saisravan909/Systems-Infrastructure-Lab/blob/main/01-netscout-sniffer/LAB_ARCHITECTURE%20GUIDE.md) | Step-by-step implementation instructions, Detailed system design and diagrams, and Students' Cheat Sheet -a quick reference while coding |
-| [SYSTEM DESIGN](https://github.com/saisravan909/Systems-Infrastructure-Lab/blob/main/01-netscout-sniffer/System%20Design.md) | Step-by-step implementation instructions, Detailed system design and diagrams, and Students' Cheat Sheet -a quick reference while coding |
+| [SYSTEM DESIGN](https://github.com/saisravan909/Systems-Infrastructure-Lab/blob/main/01-netscout-sniffer/System%20Design.md) | System Design combines all major architectural ideas students learned:
+
 ---
 ## Learning Path
 
