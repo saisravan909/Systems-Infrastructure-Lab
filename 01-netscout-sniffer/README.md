@@ -39,9 +39,9 @@ Analyze --> Log
 Follow the project in this order:
 
 1️⃣ Read the **README** for the project overview  
-2️⃣ Follow the **Lab Guide** to implement the sniffer  
-3️⃣ Use the **Cheat Sheet** while coding  
-4️⃣ Review the **Architecture** to understand the system design
+2️⃣ Follow the **Lab Architecture Guide** to implement the sniffer  
+   2a. Use the **Cheat Sheet** while coding  
+   2b. Review the **Architecture** to understand the system design
 
 ---
 # Project Overview 
