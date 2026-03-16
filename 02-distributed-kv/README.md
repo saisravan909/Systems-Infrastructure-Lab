@@ -471,6 +471,80 @@ Step8[Optimize Performance]
 Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7 --> Step8
 ```
 
+# Systems Infrastructure Laboratory – Student Guide
+
+## 1️⃣ Mapping Components to Code Responsibilities
+
+This maps directly to the code that must be written. Each component corresponds to a key part of the system:
+
+| **Component**        | **Code Responsibility**                        | **💡 Hint / Example** |
+|----------------------|-----------------------------------------------|--------------------|
+| <span style="color:#ff6f61;">Network Listener</span> | Java NIO server                               | Use `ServerSocketChannel` to accept multiple clients. |
+| <span style="color:#6f4fff;">Parser</span>           | Parse PUT/GET commands                        | Split input strings and validate commands. |
+| <span style="color:#f4d03f;">Storage</span>          | HashMap or ConcurrentHashMap                  | `ConcurrentHashMap` is safer for multi-threaded access. |
+| <span style="color:#1abc9c;">Threading</span>        | Multi-client handling                          | Consider `ExecutorService` for managing threads. |
+| <span style="color:#e67e22;">Replication</span>      | Node communication                             | Use sockets or REST APIs to sync data between nodes. |
+
+> 🔹 **Pro Tip:** Think of this as the **blueprint** — each row is a mini-project in itself!  
+
+---
+
+## 2️⃣ How This Connects to Real Systems
+
+Students love seeing industry relevance. Large systems use similar architectures. Your project is a mini version of these systems:
+
+| **System**             | **Use Case**                     | **Why it Matters** |
+|------------------------|---------------------------------|------------------|
+| <span style="color:#ff6f61;">Redis</span>                  | Distributed caching             | Fast retrieval of frequently accessed data |
+| <span style="color:#6f4fff;">Apache Cassandra</span>       | Massive distributed databases   | Handles huge volumes of data reliably |
+| <span style="color:#1abc9c;">Amazon DynamoDB</span>        | Large-scale key-value storage   | Scales automatically for high traffic |
+
+> 🔹 **Pro Tip:** Think of your project as a **hands-on mini version** of these enterprise systems!  
+
+---
+
+## 3️⃣ Visual Diagram of System Architecture
+
+Below is a visual representation of how the components interact. This helps students quickly understand the data flow and responsibilities:
+
+![System Architecture Diagram](./a_diagram_illustrates_the_distributed_key_value_st.png)
+
+- <span style="color:#ff6f61;">**Network Listener:**</span> Handles incoming client requests.  
+- <span style="color:#6f4fff;">**Parser:**</span> Processes PUT/GET commands.  
+- <span style="color:#f4d03f;">**Storage:**</span> Stores data using HashMap/ConcurrentHashMap.  
+- <span style="color:#1abc9c;">**Threading:**</span> Enables handling of multiple clients simultaneously.  
+- <span style="color:#e67e22;">**Replication:**</span> Synchronizes data with other nodes.  
+
+> 🔹 **Pro Tip:** Use this diagram as your **roadmap** — it’s the visual equivalent of your project’s backbone!
+
+---
+
+### 🎯 Quick Takeaways
+
+1. Each component in your project maps to a real-world system component.  
+2. Multi-threading and replication are critical for real systems — now you get to implement them!  
+3. This mini project mirrors industry-scale architectures like Redis, Cassandra, and DynamoDB.  
+
+> 💥 **Challenge:** Try to trace a PUT or GET request from the **Network Listener** all the way to **Replication** — that’s how real distributed systems work!
+
+
+
+
+
+
+# Mapping Components to Code Responsibilities
+
+This maps directly to the code that must be written. Each component corresponds to a key part of the system:
+
+| **Component**        | **Code Responsibility**                        | **Hint / Example** |
+|----------------------|-----------------------------------------------|------------------|
+| Network Listener     | Java NIO server                               | Use `ServerSocketChannel` to accept multiple clients. |
+| Parser               | Parse PUT/GET commands                        | Split input strings and validate commands. |
+| Storage              | HashMap or ConcurrentHashMap                  | `ConcurrentHashMap` is safer for multi-threaded access. |
+| Threading            | Multi-client handling                          | Consider `ExecutorService` for managing threads. |
+| Replication          | Node communication                             | Use sockets or REST APIs to sync data between nodes. |
+
+> 💡 **Tip:** Think of this as the blueprint — each row is a mini-project in itself!
 
 
 
