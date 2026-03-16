@@ -30,10 +30,8 @@ Analyze --> Log
 
 | Section | Description |
 |--------|-------------|
-| [Lab Guide](LAB_GUIDE.md) | Step-by-step implementation instructions |
-| [Architecture Deep Dive](ARCHITECTURE.md) | Detailed system design and diagrams |
-| [Student Cheat Sheet](CHEATSHEET.md) | Quick reference while coding |
-| [Source Code](src/) | Implementation files |
+| [LAB_ARCHITECTURE GUIDE.md](https://github.com/saisravan909/Systems-Infrastructure-Lab/blob/main/01-netscout-sniffer/LAB_ARCHITECTURE%20GUIDE.md) | Step-by-step implementation instructions, Detailed system design and diagrams, and Students' Cheat Sheet -a quick reference while coding |
+
 
 ---
 ## Learning Path
