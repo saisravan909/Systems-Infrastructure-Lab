@@ -314,3 +314,28 @@ Step7[Optimize Performance]
 
 Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7
 ```
+## Real-World Infrastructure Analogy
+
+```mermaid
+flowchart LR
+
+Users[Millions of Users]
+
+LoadBalancer[Load Balancer]
+
+ServerA[Backend Server A]
+ServerB[Backend Server B]
+ServerC[Backend Server C]
+
+DistributedDB[(Distributed Key-Value Store)]
+
+Users --> LoadBalancer
+LoadBalancer --> ServerA
+LoadBalancer --> ServerB
+LoadBalancer --> ServerC
+
+ServerA --> DistributedDB
+ServerB --> DistributedDB
+ServerC --> DistributedDB
+```
+
