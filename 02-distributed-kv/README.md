@@ -236,4 +236,22 @@ NodeA --> Store
 NodeB --> Store
 NodeC --> Store
 ```
+## Client Request Flow
 
+```mermaid
+sequenceDiagram
+
+participant Client
+participant Node
+participant Storage
+
+Client->>Node: PUT key value
+Node->>Storage: Store key/value
+Storage-->>Node: Success
+Node-->>Client: OK
+
+Client->>Node: GET key
+Node->>Storage: Lookup key
+Storage-->>Node: Return value
+Node-->>Client: value
+```
