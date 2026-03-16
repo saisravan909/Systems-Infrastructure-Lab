@@ -240,7 +240,19 @@ How to branch, commit, and submit merge requests:
 ```
 
 ---
+# Contributors Directory
 
+This directory serves as the landing zone for Project 0. Every student must maintain a markdown file here to track their progression and path selection.
+
+### File Naming Convention:
+`[your-github-username].md`
+
+### Contents:
+- **Full Name:**
+- **Selected Path:**
+- **Environment Status:** (e.g., GCC 11.4 / OpenJDK 21)
+
+---
 # Engineering Philosophy
 
 The Systems Infrastructure Lab follows principles used in modern large-scale engineering organizations:
