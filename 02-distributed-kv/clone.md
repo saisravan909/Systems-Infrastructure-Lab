@@ -16,3 +16,20 @@ Copy and paste the following command into your terminal and press **Enter**:
 
 ```bash
 git clone [https://github.com/saisravan909/Systems-Infrastructure-Lab.git](https://github.com/saisravan909/Systems-Infrastructure-Lab.git)
+---
+
+Step 4: Move Into the Project Folder
+Once the download is finished, move your terminal's focus into the new folder:
+
+
+cd Systems-Infrastructure-Lab
+
+Step 5: Navigate to the Lab Module
+Since you are working on the Distributed Key-Value Store, move into that specific directory:
+
+cd 02-distributed-kv
+
+Step 6: Verify Java is Installed
+This project uses Java. Check if your environment is ready by running:
+
+java -version
