@@ -477,7 +477,7 @@ Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Step6 --> Step7 --> Step8
 
 This maps directly to the code that must be written. Each component corresponds to a key part of the system:
 
-| **Component**        | **Code Responsibility**                        | **💡 Hint / Example** |
+| **Component**        | **Code Responsibility**                        | ** Hint / Example** |
 |----------------------|-----------------------------------------------|--------------------|
 | <span style="color:#ff6f61;">Network Listener</span> | Java NIO server                               | Use `ServerSocketChannel` to accept multiple clients. |
 | <span style="color:#6f4fff;">Parser</span>           | Parse PUT/GET commands                        | Split input strings and validate commands. |
@@ -519,32 +519,11 @@ Below is a visual representation of how the components interact. This helps stud
 
 ---
 
-### 🎯 Quick Takeaways
+###  Quick Takeaways
 
 1. Each component in your project maps to a real-world system component.  
 2. Multi-threading and replication are critical for real systems — now you get to implement them!  
 3. This mini project mirrors industry-scale architectures like Redis, Cassandra, and DynamoDB.  
 
-> 💥 **Challenge:** Try to trace a PUT or GET request from the **Network Listener** all the way to **Replication** — that’s how real distributed systems work!
-
-
-
-
-
-
-# Mapping Components to Code Responsibilities
-
-This maps directly to the code that must be written. Each component corresponds to a key part of the system:
-
-| **Component**        | **Code Responsibility**                        | **Hint / Example** |
-|----------------------|-----------------------------------------------|------------------|
-| Network Listener     | Java NIO server                               | Use `ServerSocketChannel` to accept multiple clients. |
-| Parser               | Parse PUT/GET commands                        | Split input strings and validate commands. |
-| Storage              | HashMap or ConcurrentHashMap                  | `ConcurrentHashMap` is safer for multi-threaded access. |
-| Threading            | Multi-client handling                          | Consider `ExecutorService` for managing threads. |
-| Replication          | Node communication                             | Use sockets or REST APIs to sync data between nodes. |
-
-> 💡 **Tip:** Think of this as the blueprint — each row is a mini-project in itself!
-
-
+> **Challenge:** Try to trace a PUT or GET request from the **Network Listener** all the way to **Replication** — that’s how real distributed systems work!
 
