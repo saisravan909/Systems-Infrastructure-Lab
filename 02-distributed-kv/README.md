@@ -1,4 +1,41 @@
 # 02-Distributed Key-Value Store
+
+Goal: Build a mini distributed storage system similar to Redis or DynamoDB.
+## Distributed Cluster Architecture
+
+```mermaid
+flowchart LR
+
+ClientA[Client]
+ClientB[Client]
+ClientC[Client]
+
+LB[Request Router]
+
+Node1[KV Node 1]
+Node2[KV Node 2]
+Node3[KV Node 3]
+
+Storage1[(Local Store)]
+Storage2[(Local Store)]
+Storage3[(Local Store)]
+
+ClientA --> LB
+ClientB --> LB
+ClientC --> LB
+
+LB --> Node1
+LB --> Node2
+LB --> Node3
+
+Node1 --> Storage1
+Node2 --> Storage2
+Node3 --> Storage3
+
+Node1 <-->|Replicate| Node2
+Node2 <-->|Replicate| Node3
+Node3 <-->|Replicate| Node1
+```
 ## Scalable State Management and Consensus Logic
 
 ### Architectural Overview
