@@ -1,3 +1,4 @@
+# LAB ARCHITECTURE GUIDE
 # NetScout Sniffer Project – Complete Student Guide with Flowcharts
 
 ## Overview
